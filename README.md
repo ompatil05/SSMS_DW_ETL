@@ -4,7 +4,9 @@ Modern Data Warehouse project demonstrating ETL workflow , data extraction , dat
 ## 🏗️ Data Architecture
 
 <p align="center">
-  <img src="https://github.com/ompatil05/SSMS_DW_ETL/blob/main/docs/High_Level_Architecture.drawio.png" alt="Data Architecture" width="300"/>
+  <img src="https://github.com/ompatil05/SSMS_DW_ETL/blob/main/docs/High_Level_Architecture.drawio.png?raw=true" 
+       alt="Data Architecture" 
+       style="max-width: 100%; height: auto;"/>
 </p>
 
 This Project involves :
