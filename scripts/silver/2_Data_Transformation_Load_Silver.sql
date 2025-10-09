@@ -166,7 +166,9 @@ BEGIN
                 WHEN UPPER(TRIM(gndr)) IN ('M', 'MALE') THEN 'Male'
                 ELSE 'n/a'
             END AS gndr
-        FROM bronze.erp_cust_AZ12;
+        FROM bronze.erp_cust_AZ12
+        WHERE birth_date <= GETDATE()
+        OR birth_date >= '1990-01-01';
 
         SET @ENDTIME = GETDATE();
         PRINT '>>> LOADING TIME FOR silver.erp_cust_AZ12: ' + CAST(DATEDIFF(SECOND, @STARTTIME, @ENDTIME) AS NVARCHAR) + ' SECONDS';
@@ -243,3 +245,4 @@ GO
 
 -- Execute the procedure
 EXEC silver.load_silver;
+
