@@ -1,6 +1,12 @@
 # SSMS_DW_ETL
 Modern Data Warehouse project demonstrating ETL workflow , data extraction , data cleaning , data loading and a three- Layer architecture using SQL Server.
 
+## 🏗️ Data Architecture
+
+<p align="center">
+  <img src="https://github.com/ompatil05/SSMS_DW_ETL/blob/main/docs/High_Level_Architecture.drawio.png" alt="Data Architecture" width="300"/>
+</p>
+
 This Project involves :
 
 1) **Data Architecture:** Designing a Modern Datawarhouse Using Medallion Architecture Bronze , Silver and Gold Layers
